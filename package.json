@@ -1,0 +1,11 @@
+{
+  "name": "bloccier",
+  "version": "0.0.1",
+  "description": "A web app for noting climbing routes",
+  "main": "main.js",
+  "keywords": [
+    "react"
+  ],
+  "author": "RubberDucky5",
+  "license": "ISC"
+}
