@@ -1,0 +1,12 @@
+services:
+  frontend:
+    image: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    develop:
+      watch:
+        - path: .
+          action: rebuild
+    ports:
+      - "8080:8080"
