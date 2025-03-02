@@ -26,9 +26,10 @@ function generateSession (type) {
     climbs.push(`V${Math.floor(Math.random() * 10)}`);
   }
 
+  let date = new Date(Date.now());
 
   return {
-      //date: randomDate(Date.now(), Date.now()),
+      date: date,
       type: `${type}`,
       climbs: climbs,
       notes: "Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc eu class magna semper senectus facilisis senectus laoreet. Viverra placerat vel integer velit purus dapibus fusce litora. Molestie mus donec nam posuere vestibulum tellus. Eros mus eleifend tellus nisi ipsum ultrices. Turpis sit lacinia hendrerit vel habitasse lobortis laoreet quis natoque. Aliquam conubia proin phasellus lacus a donec ullamcorper magnis. Arcu blandit torquent himenaeos tincidunt velit.",
@@ -36,5 +37,5 @@ function generateSession (type) {
 }
 
 function randomDate(start, end) {
-  return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+  return new Date(start + Math.random() * (end - start));
 }
